@@ -62,3 +62,47 @@ h3 {
     color: #0096c7; 
     margin-bottom: 1.5rem; 
 }
+
+.menu-nav { 
+    margin: 1.5rem 0 2.5rem 0; 
+}
+
+.menu-nav ul { 
+    list-style: none; 
+    display: flex; 
+    justify-content: center; 
+    gap: 1.5rem; 
+}
+
+.menu-nav li { 
+    width: 28%; 
+}
+
+.menu-nav li a { 
+    display: block; 
+    text-align: center; 
+    padding: 0.75rem 1rem; 
+    border-radius: 0.5rem; 
+    text-decoration: none; 
+    font-weight: 600; 
+    transition: all 0.3s ease; 
+}
+
+.menu-nav li a:link { 
+    background-color: #e0f7fa; 
+    color: #0c2340; 
+}
+
+.menu-nav li a:visited { 
+    color: #0077b6; 
+}
+
+.menu-nav li a:hover { 
+    background-color: #0077b6; 
+    color: #ffffff; 
+}
+
+.menu-nav li a:active { 
+    background-color: #03045e; 
+    color: #ffffff; 
+}
