@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Obras de Casey Reas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="contenedor-principal">
+        <header class="encabezado">
+            <h1>Casey Reas</h1>
+            <p class="subtitulo-destacado">Código, sistemas y arte generativo contemporáneo</p>
+            <blockquote class="cita-destacada">“Una obra puede ser definida como un sistema y ejecutada en múltiples formas.” — Casey Reas</blockquote>
+            <nav class="menu-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="obras.html">Obras</a></li>
+                    <li><a href="critica.html">Ejercicio JS</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            
+            <section class="layout-dos-columnas">
+                <article class="columna-principal">
+                    <h2>Sistemas, reglas y variación</h2>
+                    <p>El trabajo de Casey Reas se fundamenta en la idea de que una obra puede ser entendida como un sistema de reglas. Estas reglas definen las posibles interacciones entre los elementos visuales, permitiendo que la obra se genere a partir de su ejecución.</p>
+                    <p>Este enfoque introduce la variación como un elemento central. Cada vez que el sistema se ejecuta, puede producir un resultado diferente, lo que transforma la noción de originalidad y repetición en el arte digital.</p>
+                    
+                    <h2>El rol del artista-programador</h2>
+                    <p>En la práctica de Reas, el artista asume el rol del programador. En lugar de intervenir directamente sobre la imagen final, diseña el conjunto de instrucciones que dará lugar a múltiples resultados posibles.</p>
+                    <p>Este cambio de rol implica una forma distinta de pensar el proceso creativo. La autoría se desplaza hacia el diseño del sistema, mientras que la ejecución introduce elementos de autonomía y sorpresa en la obra.</p>
+                </article>
+
+                <aside class="columna-secundaria">
+                    <h3>Obras y conceptos clave</h3>
+                    <ul class="lista-conceptos">
+                        <li>Software Structures</li>
+                        <li>Process</li>
+                        <li>Generative Systems</li>
+                        <li>Emergencia</li>
+                        <li>Arte basado en reglas</li>
+                        <li>Visualización algorítmica</li>
+                    </ul>
+                </aside>
+            </section>
+
+           
+            <section class="seccion-galeria-contenedor">
+                <h2>Galería de Obras Destacadas</h2>
+                <div class="panel-control-galeria">
+                    <button id="btn-cambiar-diseno" class="boton-estilo">Cambiar Diseño de Galería</button>
+                </div>
+                <div id="galeria-obras" class="galeria-flex modo-normal"></div>
+            </section>
+        </main>
+
+        <footer class="pie-pagina">
+            <address>
+                <p>Para contactarse escribir a <a href="mailto:casey@artedigital.com">casey@artedigital.com</a></p>
+            </address>
+            <p>&copy; 2026 Informática General — Artes Multimediales UNA</p>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

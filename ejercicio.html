@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio:Casey Reas Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="contenedor-principal">
+        <header class="encabezado">
+            <h1>Casey Reas</h1>
+            <p class="subtitulo-destacado">Código, sistemas y arte generativo contemporáneo</p>
+            <blockquote class="cita-destacada">“Una obra puede ser definida como un sistema y ejecutada en múltiples formas.” — Casey Reas</blockquote>
+            <nav class="menu-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="obras.html">Obras</a></li>
+                    <li><a href="critica.html">Ejercicio JS</a></li>
+                </ul>
+            </nav>
+        </header>
+<main>
+            <!-- Sección teórica final de texto.txt -->
+            <section class="bloque-contenido layout-dos-columnas-critica">
+                <div class="texto-critica">
+                    <h2>Influencia en el arte contemporáneo</h2>
+                    <p>La obra de Casey Reas ha tenido un impacto significativo en el desarrollo del arte digital y generativo. Su enfoque ha contribuido a legitimar el uso del código como un medio artístico en el contexto contemporáneo.</p>
+                    <p>Su influencia puede observarse en numerosos artistas y proyectos que adoptan el pensamiento basado en sistemas y algoritmos. A través de su trabajo, se ha ampliado la comprensión de las posibilidades del arte en relación con la tecnología.</p>
+                </div>
+                <div class="imagen-critica">
+                    <img src="img/reas-3.jpg" alt="Exposición de Casey Reas">
+                </div>
+            </section>
+
+            <!-- Funcionalidad del Dato Curioso al Azar -->
+            <section class="bloque-interactivo">
+                <h2>Dato curioso al azar</h2>
+                <button id="btn-dato" class="boton-estilo">Obtener dato curioso al azar</button>
+                <div class="caja-salida">
+                    <p id="texto-dato" class="mensaje-dinamico">Haz clic en el botón para descubrir un dato curioso sobre Casey Reas.</p>
+                </div>
+            </section>
+
+            <!-- Resolución del Ejercicio de Gestión de Producción de Instalaciones -->
+            <section class="bloque-interactivo">
+                <h2>Gestión de Producción de Instalaciones Interactivas</h2>
+                <p class="instrucciones-ui">Complete los formularios secuencialmente para calcular los costos operativos del estudio.</p>
+
+                <!-- Formulario Paso 1: Configuración General -->
+                <form id="form-config" class="formulario-estudio">
+                    <h3>Paso 1: Datos Generales del Estudio</h3>
+                    <div class="campo">
+                        <label for="cant-instalaciones">Cantidad total de instalaciones a producir:</label>
+                        <input type="number" id="cant-instalaciones" min="1" required placeholder="Ej: 3">
+                    </div>
+                    <div class="campo">
+                        <label for="horas-dia">Horas de trabajo por día (por persona):</label>
+                        <input type="number" id="horas-dia" min="1" max="24" required placeholder="Ej: 8">
+                    </div>
+                    <div class="campo">
+                        <label for="honorario-hora">Valor del honorario por hora ($):</label>
+                        <input type="number" id="honorario-hora" min="1" required placeholder="Ej: 2500">
+                    </div>
+                    <button type="submit" id="btn-iniciar-carga" class="boton-estilo">Iniciar Carga de Instalaciones</button>
+                </form>
+
+                <!-- Formulario Paso 2: Carga Individual -->
+                <form id="form-instalacion" class="formulario-estudio" style="margin-top: 1.5rem;">
+                    <h3 id="titulo-paso2">Paso 2: Carga de Instalación (0 / 0)</h3>
+                    <div class="campo">
+                        <label for="nombre-inst">Nombre de la instalación:</label>
+                        <input type="text" id="nombre-inst" required placeholder="Ej: Software Structures" disabled>
+                    </div>
+                    <div class="campo">
+                        <label for="personas-inst">Cantidad de personas necesarias:</label>
+                        <input type="number" id="personas-inst" min="1" required placeholder="Ej: 4" disabled>
+                    </div>
+                    <div class="campo">
+                        <label for="dias-inst">Días estimados de producción:</label>
+                        <input type="number" id="dias-inst" min="1" required placeholder="Ej: 15" disabled>
+                    </div>
+                    <button type="submit" id="btn-agregar-inst" class="boton-estilo" disabled>Agregar Instalación</button>
+                </form>
+
+                <!-- Botones de Acción de Cálculo y Reinicio -->
+                <div class="acciones-finales" style="margin-top: 1.5rem; text-align: center;">
+                    <button type="button" id="btn-calcular" class="boton-estilo" disabled>Calcular Resultados</button>
+                    <button type="button" id="btn-reiniciar" class="boton-estilo boton-secundario" disabled>Reiniciar Todo</button>
+                </div>
+
+                <!-- Salida de Resultados del Ejercicio -->
+                <div id="resultado-ejercicio" class="caja-salida oculto"></div>
+            </section>
+        </main>
+
+        <footer class="pie-pagina">
+            <address>
+                <p>Para contactarse escribir a <a href="mailto:casey@artedigital.com">casey@artedigital.com</a></p>
+            </address>
+            <p>&copy; 2026 Informática General — Artes Multimediales UNA</p>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

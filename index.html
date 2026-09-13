@@ -1,25 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Casey Reas: Arte Generativo</title>
-    
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="css/estilos.css">
+    <meta charset="UTF-8">
+    <title>Casey Reas: Arte Generativo</title>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
-<div> 
-    <header>
-         <h1>Casey Reas</h1>
-         <p>Código, sistemas y arte generativo contemporáneo</p> 
-         <nav> 
-            <ul>
-                 <li><a href="index.html">Inicio</a></li>
-                  <li><a href="obras.html">Obras</a></li> 
-                  <li><a href="critica.html">Crítica</a></li> 
-            </ul> 
-        </nav> 
-    </header>
-</div>
+<body>
+    
+    <div class="contenedor-principal">
+        <header class="encabezado">
+            <h1>Casey Reas</h1>
+            <p class="subtitulo-destacado">Código, sistemas y arte generativo contemporáneo</p>
+            <blockquote class="cita-destacada">“Una obra puede ser definida como un sistema y ejecutada en múltiples formas.” — Casey Reas</blockquote>
+            <nav class="menu-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="obras.html">Obras</a></li>
+                    <li><a href="ejercicio.html">Ejercicio JS</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+           
+            <section class="layout-tres-columnas">
+                <article class="tarjeta-columna">
+                    <h2>Arte generativo y pensamiento computacional</h2>
+                    <p>Casey Reas es un artista, programador y educador reconocido por su trabajo en el desarrollo del arte generativo. Su práctica se basa en la creación de sistemas que, a partir de reglas definidas, producen imágenes y comportamientos visuales autónomos. Este enfoque desplaza la idea tradicional de obra terminada hacia procesos abiertos y en constante evolución.</p>
+                </article>
+
+                <article class="tarjeta-columna">
+                    <h2>Trayectoria y contribuciones</h2>
+                    <p>Nacido en Estados Unidos, Casey Reas desarrolló su formación en diseño y medios digitales, consolidando una carrera que combina investigación, producción artística y docencia. Es ampliamente conocido por ser co-creador del lenguaje de programación Processing, junto a Ben Fry, una herramienta fundamental para artistas y diseñadores que trabajan con código.</p>
+                    <p>A lo largo de su trayectoria, su obra ha sido exhibida en museos, galerías y festivales internacionales. Sus proyectos exploran tanto sistemas digitales como su materialización en formatos físicos, ampliando las posibilidades del arte generativo.</p>
+                    <p>Su influencia se extiende también al ámbito educativo, donde ha contribuido a formar nuevas generaciones de artistas y desarrolladores. Su trabajo ha sido clave para establecer un puente entre el arte, el diseño y la programación.</p>
+                </article>
+
+                <article class="tarjeta-columna">
+                    <h2>El código como sistema visual</h2>
+                    <p>El enfoque de Casey Reas se basa en la creación de instrucciones que definen comportamientos visuales. En lugar de diseñar una imagen de forma directa, desarrolla algoritmos que determinan cómo los elementos se relacionan, se mueven y evolucionan en el tiempo. Este método convierte al código en el núcleo del proceso creativo.</p>
+                    <p>A partir de reglas simples, sus sistemas pueden generar resultados complejos e impredecibles. Esta lógica permite explorar la emergencia, donde patrones y formas surgen de la interacción entre componentes. El resultado es una obra que no está completamente controlada, sino que se desarrolla dentro de un marco definido.</p>
+                </article>
+            </section>
+        </main>
+
+        <footer class="pie-pagina">
+            <address>
+                <p>Para contactarse escribir a <a href="mailto:casey@artedigital.com">casey@artedigital.com</a></p>
+            </address>
+            <p>&copy; 2026 Informática General — Artes Multimediales UNA</p>
+        </footer>
+    </div>
+</body>
+</html>
