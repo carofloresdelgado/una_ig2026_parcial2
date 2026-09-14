@@ -129,12 +129,6 @@ h3 {
     border-radius: 0.5rem; 
     margin-top: 0.5rem; 
 }
-.tarjeta-columna img { 
-    width: 100%; 
-    height: auto; 
-    border-radius: 0.5rem; 
-    margin-top: 0.5rem; 
-}
 
 .layout-dos-columnas { 
     display: flex; 
@@ -172,4 +166,160 @@ h3 {
 .lista-conceptos { 
     list-style-position: inside; 
     margin-top: 0.8rem; 
+}
+
+.lista-conceptos li { 
+    margin-bottom: 0.5rem; 
+}
+
+.layout-dos-columnas-critica { 
+    display: flex; 
+    gap: 1.5rem; 
+    align-items: center; 
+}
+
+.texto-critica { 
+    width: 65%; 
+}
+.imagen-critica { 
+    width: 32%; 
+}
+
+.imagen-critica img { 
+    width: 100%; 
+    height: auto; 
+    border-radius: 0.5rem; 
+}
+
+.seccion-galeria-contenedor { 
+    background-color: #ffffff; 
+    padding: 2rem; border-radius: 0.75rem; 
+    border: 1px solid #d8eee7; 
+}
+.panel-control-galeria { 
+    margin-bottom: 1.5rem; 
+    text-align: center; 
+}
+.galeria-flex { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 1.5rem; 
+}
+
+.modo-normal .tarjeta-obra { 
+    width: 30%; 
+    background-color: #f4fbfd; 
+    border-radius: 0.5rem; 
+    padding: 1rem; 
+    text-align: center; 
+    border: 1px solid #caf0f8; 
+}
+
+.modo-compacto .tarjeta-obra { 
+    width: 46%; 
+    background-color: #0c2340; 
+    color: #ffffff; 
+    border-radius: 0.5rem; 
+    padding: 1.5rem; 
+    text-align: center; 
+}
+.modo-compacto .tarjeta-obra h3 { 
+    color: #90e0ef; 
+}
+.tarjeta-obra img { 
+    width: 100%; 
+    height: 180px; 
+    object-fit: cover; 
+    border-radius: 0.4rem; 
+    margin-bottom: 0.8rem; 
+}
+
+.bloque-contenido, .bloque-interactivo { 
+    background-color: #ffffff; 
+    padding: 2rem; 
+    border-radius: 0.75rem; 
+    border: 1px solid #d8eee7; 
+    margin-bottom: 2rem; 
+}
+
+.caja-salida { 
+    margin-top: 1.2rem; 
+    padding: 1.2rem; 
+    background-color: #e0f7fa; 
+    border-radius: 0.5rem; 
+    border-left: 4px solid #0077b6; 
+}
+
+.formulario-estudio { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 1rem; 
+    background-color: #f8fdfe; 
+    padding: 1.2rem; border-radius: 
+    0.5rem; 
+    border: 1px solid #caf0f8; 
+}
+
+.campo { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 0.3rem; 
+}
+.campo label { 
+    font-weight: 600; 
+    font-size: 0.95rem; 
+}
+.campo input { 
+    padding: 0.6rem; 
+    border: 1px solid #90e0ef; 
+    border-radius: 0.4rem; 
+    font-size: 1rem; 
+}
+.campo input:disabled { 
+    background-color: #e9ecef; 
+    cursor: not-allowed; 
+}
+
+.boton-estilo { 
+    background-color: #0077b6; 
+    color: #ffffff; 
+    border: none; 
+    padding: 0.75rem 1.5rem; 
+    font-size: 0.95rem; 
+    font-weight: 600; 
+    border-radius: 0.4rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    align-self: center; 
+}
+.boton-estilo:hover:not(:disabled) { 
+    background-color: #0096c7; 
+}
+.boton-estilo:disabled { 
+    background-color: #adb5bd; 
+    cursor: not-allowed; 
+}
+.boton-secundario { 
+    background-color: #6c757d; 
+}
+.oculto { 
+    display: none; 
+}
+
+.pie-pagina { 
+    margin-top: 3rem; 
+    padding-top: 1.5rem; 
+    border-top: 1px solid #d8eee7; 
+    text-align: center; 
+    font-size: 0.9rem; 
+    color: #4a607a; 
+}
+.pie-pagina address { 
+    font-style: normal; 
+    margin-bottom: 0.4rem; 
+}
+.pie-pagina a { 
+    color: #0077b6; 
+    text-decoration: none; 
+    font-weight: 600; 
 }
