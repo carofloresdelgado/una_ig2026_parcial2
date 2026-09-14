@@ -16,11 +16,11 @@ const galeriaContenedor = document.getElementById('galeria-obras');
 const btnCambiarDiseno = document.getElementById('btn-cambiar-diseno');
 
 const obrasArtísticas = [ 
-    { nombre: "Software Structures", anio: 2004, imagen: "img/reas-2.jpg" }, 
-    { nombre: "Process 18", anio: 2007, imagen: "../img/reas-1.jpg" }, 
-    { nombre: "Process 4", anio: 2005, imagen: "../img/reas-3.jpg" }, 
-    { nombre: "Tissue", anio: 2002, imagen: "../img/reas.jpg" }, 
-    { nombre: "Path", anio: 2011, imagen: "../img/reas-2.jpg" } 
+    { nombre: "Software Structures", anio: 2004, imagen: "img/software.jpg" }, 
+    { nombre: "Process 18", anio: 2007, imagen: "img/reas-1.jpg" }, 
+    { nombre: "Process 4", anio: 2005, imagen: "img/reas-3.jpg" }, 
+    { nombre: "Tissue", anio: 2002, imagen: "img/tissue-1.jpg" }, 
+    { nombre: "Path", anio: 2011, imagen: "img/reas-2.jpg" } 
 ];
 
 if (galeriaContenedor) { 
