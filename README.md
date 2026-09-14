@@ -1,2 +1,2 @@
 # una_ig2026_parcial2
-
+CarolinaFloresDelgado_Segundo Parcial_Informática General_Artes Multimediales_UNA
